@@ -1,0 +1,19 @@
+{
+	"id": "38de5b15-0f69-4e71-a069-c694d7b7405d",
+	"name": "ExamenMod3",
+	"values": [
+		{
+			"key": "random_name",
+			"value": "Wilfred",
+			"enabled": true
+		},
+		{
+			"key": "Name",
+			"value": "Andre",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2020-10-27T17:11:49.803Z",
+	"_postman_exported_using": "Postman/7.34.0"
+}
