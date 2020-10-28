@@ -2,7 +2,7 @@ pipeline {
     agent any{
     stage('Newman Tests') {
         steps {
-            sh '''
+            bat '''
             cd api/newman
             newman run ExamenModulo3.json -e ExamenMod3.json
             '''
@@ -10,7 +10,7 @@ pipeline {
     }
     stage('JMeter Tests') {
         steps {
-            sh '''
+            bat '''
             cd load
             jmeter -n -t ExamenU.jmx
             '''
