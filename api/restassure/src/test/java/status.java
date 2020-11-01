@@ -4,6 +4,9 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class status extends BaseTest{
 
+    private static final String RESOURCE = "/";
+
+
     @Test
     public void Ping_Test(){
         request
