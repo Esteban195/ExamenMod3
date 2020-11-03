@@ -27,6 +27,7 @@ pipeline {
             '''
         }
     }
+    }
 post{
     always {
             mail to: 'edgaresteban.arias.castro@ucreativa.com',
@@ -34,5 +35,4 @@ post{
             body: "Se ha terminado la compilación, porfavor revisa: ${env.BUILD_URL}"
             }
     }  
-}
 }
