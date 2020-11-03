@@ -9,6 +9,14 @@ pipeline {
             '''
         }
     }
+    stage('RessAsured Tests') {
+        steps {
+            sh '''
+            cd api/restassure
+            mvn clean test
+            '''
+        }
+    }
     stage('JMeter Tests') {
         steps {
             sh '''
