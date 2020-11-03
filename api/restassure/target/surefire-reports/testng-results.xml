@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Examen" duration-ms="6823" started-at="2020-11-02T23:03:36 CST" finished-at="2020-11-02T23:03:43 CST">
+    <groups>
+    </groups>
+    <test name="Regression" duration-ms="6823" started-at="2020-11-02T23:03:36 CST" finished-at="2020-11-02T23:03:43 CST">
+      <class name="UserTests">
+        <test-method status="PASS" signature="SetupRestAssured(java.lang.String)[pri:0, instance:UserTests@79be0360]" name="SetupRestAssured" is-config="true" duration-ms="0" started-at="2020-11-02T23:03:40 CST" finished-at="2020-11-02T23:03:40 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-coffee-testing.herokuapp.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupRestAssured -->
+        <test-method status="PASS" signature="assert2()[pri:0, instance:UserTests@79be0360]" name="assert2" duration-ms="600" started-at="2020-11-02T23:03:40 CST" finished-at="2020-11-02T23:03:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assert2 -->
+        <test-method status="PASS" signature="before()[pri:0, instance:UserTests@79be0360]" name="before" is-config="true" duration-ms="0" started-at="2020-11-02T23:03:40 CST" finished-at="2020-11-02T23:03:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="before()[pri:0, instance:UserTests@79be0360]" name="before" is-config="true" duration-ms="1" started-at="2020-11-02T23:03:40 CST" finished-at="2020-11-02T23:03:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="assert3()[pri:0, instance:UserTests@79be0360]" name="assert3" duration-ms="771" started-at="2020-11-02T23:03:40 CST" finished-at="2020-11-02T23:03:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assert3 -->
+        <test-method status="PASS" signature="before()[pri:0, instance:UserTests@79be0360]" name="before" is-config="true" duration-ms="1" started-at="2020-11-02T23:03:41 CST" finished-at="2020-11-02T23:03:41 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="assert4()[pri:0, instance:UserTests@79be0360]" name="assert4" duration-ms="1171" started-at="2020-11-02T23:03:41 CST" finished-at="2020-11-02T23:03:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assert4 -->
+        <test-method status="PASS" signature="assert5()[pri:0, instance:UserTests@79be0360]" name="assert5" duration-ms="786" started-at="2020-11-02T23:03:42 CST" finished-at="2020-11-02T23:03:43 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assert5 -->
+        <test-method status="PASS" signature="before()[pri:0, instance:UserTests@79be0360]" name="before" is-config="true" duration-ms="0" started-at="2020-11-02T23:03:42 CST" finished-at="2020-11-02T23:03:42 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+      </class> <!-- UserTests -->
+      <class name="nonAPITest">
+        <test-method status="PASS" signature="SetupRestAssured(java.lang.String)[pri:0, instance:nonAPITest@6321e813]" name="SetupRestAssured" is-config="true" duration-ms="385" started-at="2020-11-02T23:03:36 CST" finished-at="2020-11-02T23:03:37 CST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://api-coffee-testing.herokuapp.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupRestAssured -->
+        <test-method status="PASS" signature="before()[pri:0, instance:nonAPITest@6321e813]" name="before" is-config="true" duration-ms="124" started-at="2020-11-02T23:03:37 CST" finished-at="2020-11-02T23:03:37 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="assert1()[pri:0, instance:nonAPITest@6321e813]" name="assert1" duration-ms="2937" started-at="2020-11-02T23:03:37 CST" finished-at="2020-11-02T23:03:40 CST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assert1 -->
+      </class> <!-- nonAPITest -->
+    </test> <!-- Regression -->
+  </suite> <!-- Examen -->
+</testng-results>
