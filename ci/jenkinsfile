@@ -29,7 +29,7 @@ pipeline {
     }
     }
     
-post {
+post('Notificación correo') {
     always {
         mail to: 'edgaresteban.arias.castro@ucreativa.com',
         subject: "Se completo el pipeline: ${currentBuild.fullDisplayName}",
