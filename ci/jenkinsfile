@@ -27,8 +27,7 @@ pipeline {
             '''
         }
     }
-    }
-    stage('JMeter Tests') {  
+    stage('Notificacion correo') {  
         post{
             always {
                 mail to: 'edgaresteban.arias.castro@ucreativa.com',
