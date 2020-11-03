@@ -32,7 +32,7 @@ pipeline {
 post {
     always {
         mail to: 'edgaresteban.arias.castro@ucreativa.com',
-        subject: "Se completo el pipeline: {currentBuild.fullDisplayName}",
+        subject: "Se completo el pipeline: ${currentBuild.fullDisplayName}",
         body: "Se ha terminado la compilación, porfavor revisa: ${env.BUILD_URL}"
     }
 }
