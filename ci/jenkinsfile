@@ -28,12 +28,13 @@ pipeline {
         }
     }
     }
-    
-post('Notificación correo') {
-    always {
-        mail to: 'edgaresteban.arias.castro@ucreativa.com',
-        subject: "Se completo el pipeline: ${currentBuild.fullDisplayName}",
-        body: "Se ha terminado la compilación, porfavor revisa: ${env.BUILD_URL}"
+    stage('JMeter Tests') {  
+        post{
+            always {
+                mail to: 'edgaresteban.arias.castro@ucreativa.com',
+                subject: "Se completo el pipeline: ${currentBuild.fullDisplayName}",
+                body: "Se ha terminado la compilación, porfavor revisa: ${env.BUILD_URL}"
     }
+        }  
 }
 }
