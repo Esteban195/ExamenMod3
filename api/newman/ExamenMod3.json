@@ -9,11 +9,21 @@
 		},
 		{
 			"key": "Name",
-			"value": "Andre",
+			"value": "Big Show",
+			"enabled": true
+		},
+		{
+			"key": "utils",
+			"value": "() => {\n    var incluirToken = () => {\n        pm.test(\"Is token include\", function () {\n            console.log(\"Validacion del token\");\n            console.log(\"Valor del token\" +pm.environment.get(\"jwtEXT\"));\n            pm.expect( pm.environment.get(\"jwtEXT\")).not.eq(undefined);\n            });\n    }//incluiToken\n    \n    var status200 = () => {\n        pm.test(\"Status test\", function () {\n            pm.response.to.have.status(200);\n        });\n    }//status200\n      \n    var imprimirBody = () => {\n        console.log(\"El Response \"+pm.response.text());\n    }//imprimirBody\n      \n    var status400 = () => {\n        pm.test(\"Status test\", function () {\n        pm.response.to.have.status(400);\n        });\n    }//status400\n    \n    var clientAuteticated = () => {\n        pm.test(\"Client is authenticated\", function () {\n            pm.expect(pm.response.text()).to.not.include(\"Client is not authenticated\")\n        });\n    }//clientAuteticated\n\n    var validarDato = (nameAssert,dato) => {\n            console.log(\"Valor del dato1:\" +pm.response.text());\n            console.log(\"Valor del dato2:\" +dato);\n        if( undefined===dato) {\n        pm.test((nameAssert+\" dato es undefined\"), function () {\n           pm.expect(pm.response.text()).to.not.include(dato);\n        });\n        }else{\n        if( null===dato) {\n          pm.test((nameAssert+\" dato es nulo\"), function () {\n       \n            pm.expect(pm.response.text()).to.not.include(dato);\n        });\n        }\n        else{\n              pm.test(nameAssert, function () {\n            \n            pm.expect(pm.response.text()).to.include(dato);\n        });\n        }\n        }\n       \n    }//validarDato\n    \n    var pakageBasicValidation = () => {\n        incluirToken();\n        status200();\n        clientAuteticated();\n        imprimirBody();\n    }//packageBasicValidation\n    \n    var datosIguales = (nameAssert,variable,jsonValue,flag) => {\n        pm.test(nameAssert, function () {\n            if (flag === true){\n                variable = pm.variables.get(variable);\n            }\n            // función para convertir todos los valores obtenidos en String \n            let valueVar = String(variable);\n            jsonValue = String(jsonValue); \n            var jsonData = pm.response.json();\n            console.log(\"Valor del ambiente o dataset:\" +valueVar);\n            console.log(\"Valor del respond:\" +jsonValue);\n            pm.expect(jsonValue).to.eql(valueVar);\n        });\n    }//datosIguales\n    return {\n        p: {\n            incluirToken,\n            status200,\n            clientAuteticated,\n            validarDato,\n            pakageBasicValidation,\n            imprimirBody,\n            status400,\n            datosIguales\n        }//p\n    };//return\n}",
+			"enabled": true
+		},
+		{
+			"key": "URL",
+			"value": "https://api-coffee-testing.herokuapp.com/v1/examen",
 			"enabled": true
 		}
 	],
 	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2020-10-27T17:11:49.803Z",
-	"_postman_exported_using": "Postman/7.34.0"
+	"_postman_exported_at": "2020-11-06T04:23:57.128Z",
+	"_postman_exported_using": "Postman/7.35.0"
 }
